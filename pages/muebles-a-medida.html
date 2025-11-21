@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEMU Deco-Muebles</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="../assets/CSS/styile.css">
+</head>
+<body>
+    <header>
+        <!--logo-->
+        <div class="logo">
+            <a href=".././index.html">
+                <img src="../assets/img/Cora + Logo (Marrón Oscuro) SIN FONDO.png" alt="Logo Lemu Deco-Muebles">
+            </a>
+        </div>
+        <!--barra de busqueda-->
+        <form class="buscar" action="/buscar" method="get">
+            <label for="buscar"></label>
+            <input type="search" name="buscar" id="buscar" placeholder="Buscar">
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass lupa"></i>
+            </button>
+        </form>
+        <!--Navegacion principal-->
+        <nav class="navegacion-principal" aria-label="Navegacion principal">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./combos.html">Combos</a></li>
+                <li><a href="./muebles-a-medida.html">Muebles a medida</a></li>
+                <li><a href="./mas-informacion.html">Mas información</a></li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars hamburguesa"></i>
+        <!--Botones carrito y perfil-->
+        <nav>
+            <i class="fa-solid fa-cart-shopping carrito"></i>
+            <i class="fa-solid fa-user perfil"></i>
+        </nav>
+    </header>   
+    <main>
+        <!--Contanos tu idea-->
+        <h1 class="ideas">Contanos tu idea</h1>
+        <section>
+            <form action="/submit"method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido">
+                <label for="telefono">Teléfono</label>
+                <input type="text" name="telefono" id="telefono">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+                <label for="descripcion">Descripción del mueble</label>
+                <textarea name="descripcion" id="descripcion" placeholder="Contanos los materiales, medidas, colores, etc."></textarea>
+                <label for="links">Links de referencia</label>
+                <textarea name="links" id="links" placeholder="Pegá aquí enlaces a fotos o ideas"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+        <!--Proyectos-->
+        <h2 class="ideas">Mira nuestros proyectos</h2>
+        <section>
+            <div class="proyectos">
+                <div>
+                    <img src="../assets/img/3cocina a medida(1).jpg" alt="Mueble de coicna hecho a medida">
+                    <p>Ver más</p>
+                </div>
+                <div>
+                    <img src="../assets/img/3escritorio con mueble a medida (1).jpg" alt="Escritorio con mueble de guardado">
+                    <p>Ver más</p>
+                </div>
+                <div>
+                    <img src="../assets/img/3habitacion a medida (1).jpg" alt="Mueble de guardado para habitación">
+                    <p>Ver más</p>
+                </div>
+                <div>
+                    <img src="../assets/img/3mueble de baño a medida(1).jpg" alt="Mueble de baño y estanteria">
+                    <p>Ver más</p>
+                </div>
+                <div>
+                    <img src="../assets/img/3oficina a medida (1).jpg" alt="Mueble para oficina">
+                    <p>Ver más</p>
+                </div>
+                <div>
+                    <img src="../assets/img/3tv a medida (1).jpg" alt="Rack de tv a medida">
+                    <p>Ver más</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!--Contactános-->
+        <section>
+            <h3>Contactános</h3>
+            <ul>
+                <li><a href="https://wa.me/c/5492615545939">+54 9 2615 54-5939</a></li>
+                <li><a href="https://www.instagram.com/lemumuebles?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram: Lemu Deco-Muebles</a></li>
+                <li>lemu.deco.muebles@gmail.com</li>
+            </ul>
+        </section>
+        <!--Suscripcion para recibir ofertas por mail-->
+        <form class="suscribirse" action="email" method="post">
+            <label for="suscribirse">Suscribite y recibí nuestras ofertas</label>
+            <input type="text" name="suscribirse" id="suscribirse" placeholder="Ingresa tu email">
+            <input type="submit" value="Enviar">
+        </form>
+        <!--Más información-->
+        <section>
+            <h3>Más información</h3>
+            <ul>
+                <li><a href="./mas-informacion.html">Garantia</a></li>
+                <li><a href="./mas-informacion.html">Envíos</a></li>
+                <li><a href="./mas-informacion.html">Devoluciones</a></li>
+                <li><a href="./pages/mas-informacion.html">Medios de pago</a></li>
+                <li><a href="./mas-informacion.html">Preguntas frecuentes</a></li>
+            </ul>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

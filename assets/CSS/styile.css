@@ -1,0 +1,185 @@
+/* Generales*/
+/*header*/
+header {
+    background-color: #e3ebc6;
+    }
+header div a img {
+    width: 100px;
+    height: auto;
+    }
+header nav ul li a {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: #623b21;
+    text-decoration: none;
+    }
+.lupa {
+    color: #623b21;
+    font-size: 20px;
+}
+/*footer*/
+footer {
+    background-color: #e3ebc6;
+}
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: #623b21;
+}
+footer section ul {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #623b21;
+}
+.suscribirse {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #623b21;
+}
+/* Inicio*/
+main {
+    background-color: #f2e7da;
+}
+main div img {
+    width: 1490px;
+    height: auto;
+}
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    color: #623b21;
+}
+
+main article h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    color: #623b21;
+}
+
+.boton-producto{
+    background-color: #623b21;
+    color: white;
+}
+.articulo{
+    padding: 0px 0px 40px;
+}
+
+.precio-anterior {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: grey;
+    text-decoration: line-through;
+}
+.precio-oferta {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+/*Muebles a medida*/
+section .proyectos div img {
+    width: 300px;
+    height: auto;
+}
+section .proyectos {
+    padding: 25px 0px 40px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 300px 300px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+section .proyectos div{
+    border: 3px solid whitesmoke
+}
+
+
+main section .proyectos div{
+    position: relative;
+}
+
+main section .proyectos div:hover::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(80, 44, 14, 0.671);
+}
+
+main section .proyectos div p{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 35px;
+    position: absolute;
+    top: calc(50% - 26px);
+    left: calc(50% - 64px);
+    z-index: 3;
+    opacity: 0;
+}
+
+main section .proyectos div:hover p{
+    opacity: 1;
+}
+
+header{
+    display: grid;
+    grid-template-areas: 
+    "logo busqueda busqueda botones"
+    "navegacion navegacion navegacion navegacion";
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px 40px;
+}
+.logo {
+    grid-area: logo;
+    padding: 15px;
+}
+
+
+.navegacion-principal{
+    grid-area: navegacion;
+}
+.botones {
+    grid-area: botones;
+}
+header nav ul{
+    display: flex;
+    column-gap: 70px;
+    justify-content: center;
+    border-top: 2.5px solid lightgrey;
+    padding: 20px 0px 10px;
+}
+header form{
+    display: flex;
+}
+.hamburguesa {
+    color: #623b21;
+    font-size: 20px;
+    display: none;
+}
+.botones{
+    color: #623b21;
+    font-size: 25px;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    padding: 15px;
+}
+
+@media(max-width:991px) {
+    .hamburguesa{
+        display: block;
+    }
+    .navegacion-principal{
+        display: none;
+    }
+}
+
