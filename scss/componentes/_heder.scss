@@ -1,0 +1,55 @@
+header {
+    background-color: #e3ebc6;
+    display: grid;
+    grid-template-areas: 
+    "logo busqueda busqueda botones"
+    "navegacion navegacion navegacion navegacion";
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px 40px;
+    form{
+    display: flex;
+    }
+    nav {
+        ul{
+            list-style: none;
+            display: flex;
+            column-gap: 70px;
+            justify-content: center;
+            border-top: 2.5px solid lightgrey;
+            padding: 20px 0px 10px;
+            li {
+                a{
+                    font-family: "Roboto", sans-serif;
+                    font-size: 20px;
+                    color: #623b21;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    div {
+        a{ 
+            img {
+                width: 100px;
+                height: auto;
+            }
+        }
+    }
+    }
+
+
+.logo {
+    grid-area: logo;
+    padding: 15px;
+}
+.navegacion-principal{
+    grid-area: navegacion;
+}
+
+header 
+.hamburguesa {
+    color: #623b21;
+    font-size: 20px;
+    display: none;
+}

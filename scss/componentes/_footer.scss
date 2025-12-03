@@ -1,0 +1,33 @@
+footer {
+    background-color: #e3ebc6;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    section {
+        ul {
+            li {
+                font-family: "Roboto", sans-serif;
+                font-size: 15px;
+                color: #623b21;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.info {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #623b21;
+}
+.suscribirse {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #623b21;
+}

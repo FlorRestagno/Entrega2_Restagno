@@ -1,0 +1,45 @@
+section{
+    .proyectos {
+    padding: 25px 0px 40px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 300px 300px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+        div{
+            border: 3px solid whitesmoke;
+            position: relative;
+            &:hover::after{
+                content: "";
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                position: absolute;
+                background-color: rgba(80, 44, 14, 0.671);
+            }
+            &:hover { 
+                p{
+                    opacity: 1;
+                }
+            }
+            p {
+                color: white;
+                font-family: "Roboto", sans-serif;
+                font-size: 35px;
+                position: absolute;
+                top: calc(50% - 26px);
+                left: calc(50% - 64px);
+                z-index: 3;
+                opacity: 0;
+            }
+            img{
+                width: 300px;
+                height: auto;
+            }
+        }
+    }
+}
