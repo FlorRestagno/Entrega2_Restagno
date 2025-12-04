@@ -88,6 +88,59 @@ section .proyectos div img {
   height: auto;
 }
 
+main .formulario-ideas {
+  display: flex;
+  justify-content: center;
+  padding: 20px 30px;
+  margin: 20px;
+}
+main .formulario-ideas .ideas-proyecto .nombrel {
+  grid-area: nombrel;
+}
+main .formulario-ideas .ideas-proyecto .nombrei {
+  grid-area: nombrei;
+}
+main .formulario-ideas .ideas-proyecto .apellidol {
+  grid-area: apellidol;
+}
+main .formulario-ideas .ideas-proyecto .apellidoi {
+  grid-area: apellidoi;
+}
+main .formulario-ideas .ideas-proyecto .telefonol {
+  grid-area: telefonol;
+}
+main .formulario-ideas .ideas-proyecto .telefonoi {
+  grid-area: telefonoi;
+}
+main .formulario-ideas .ideas-proyecto .emaill {
+  grid-area: emaill;
+}
+main .formulario-ideas .ideas-proyecto .emaili {
+  grid-area: emaili;
+}
+main .formulario-ideas .ideas-proyecto .descripcionl {
+  grid-area: descripcionl;
+}
+main .formulario-ideas .ideas-proyecto .descripciont {
+  grid-area: descripciont;
+}
+main .formulario-ideas .ideas-proyecto .linkl {
+  grid-area: linkl;
+}
+main .formulario-ideas .ideas-proyecto .linkt {
+  grid-area: linkt;
+}
+main .formulario-ideas .ideas-proyecto .boton-enviar {
+  grid-area: enviar;
+}
+main .formulario-ideas .ideas-proyecto {
+  width: 100%;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "nombrel apellidol" "nombrei apellidoi" "telefonol emaill" "telefonoi emaili" "descripcionl descripcionl" "descripciont descripciont" "linkl linkl" "linkt linkt" "enviar enviar";
+}
+
 main .productos {
   display: grid;
   grid-template-columns: 250px 1fr;

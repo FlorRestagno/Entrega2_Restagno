@@ -43,3 +43,40 @@ section{
         }
     }
 }
+main {
+    .formulario-ideas {
+        display: flex;
+        justify-content: center;
+        padding: 20px 30px;
+        margin: 20px;
+        .ideas-proyecto{
+            .nombrel {grid-area: nombrel;}
+            .nombrei {grid-area: nombrei;}
+            .apellidol {grid-area: apellidol;}
+            .apellidoi {grid-area: apellidoi;}
+            .telefonol {grid-area: telefonol;}
+            .telefonoi {grid-area: telefonoi;}
+            .emaill {grid-area: emaill;}
+            .emaili {grid-area: emaili;}
+            .descripcionl {grid-area: descripcionl;}
+            .descripciont {grid-area: descripciont;}
+            .linkl {grid-area: linkl;}
+            .linkt {grid-area: linkt;}
+            .boton-enviar {grid-area: enviar;}
+            width: 100%;
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "nombrel apellidol"
+            "nombrei apellidoi"
+            "telefonol emaill"
+            "telefonoi emaili"
+            "descripcionl descripcionl"
+            "descripciont descripciont"
+            "linkl linkl"
+            "linkt linkt"
+            "enviar enviar";
+        }
+    }
+}
