@@ -46,27 +46,28 @@
     <main>
         <h1>Productos</h1>
         <!--Filtros-->
-        <aside class="filtros">
-            <h2>Filtrar por:</h2>
-            <!--Filtro de categorias-->
+        <div class="productos">
+            <aside class="filtros">
+                <h2>Filtrar por:</h2>
+                <!--Filtro de categorias-->
                 <section class="filtro-categorias">
                     <h3>Categorías</h3>
-                        <form action="#" method="get">
-                            <label for="categoria">Living</label>
-                            <input type="checkbox" name="categoria" id="categoria">
-                            <label for="categoria">Oficina</label>
-                            <input type="checkbox" name="categoria" id="categoria">
-                            <label for="categoria">Baño</label>
-                            <input type="checkbox" name="categoria" id="categoria">
-                            <label for="categoria">Iluminación</label>
-                            <input type="checkbox" name="categoria" id="categoria">
-                            <label for="categoria">Habitación</label>
-                            <input type="checkbox" name="categoria" id="categoria">
-                            <label for="categoria">Exterior</label>
-                            <input type="checkbox" name="categoria" id="categoria">
-                        </form>
+                    <form action="#" method="get">
+                        <label for="categoria">Living</label>
+                        <input type="checkbox" name="categoria" id="categoria">
+                        <label for="categoria">Oficina</label>
+                        <input type="checkbox" name="categoria" id="categoria">
+                        <label for="categoria">Baño</label>
+                        <input type="checkbox" name="categoria" id="categoria">
+                        <label for="categoria">Iluminación</label>
+                        <input type="checkbox" name="categoria" id="categoria">
+                        <label for="categoria">Habitación</label>
+                        <input type="checkbox" name="categoria" id="categoria">
+                        <label for="categoria">Exterior</label>
+                        <input type="checkbox" name="categoria" id="categoria">
+                    </form>
                 </section>
-            <!--Filtro de muebles-->
+                <!--Filtro de muebles-->
                 <section class="filtro-muebles">
                     <h3>Tipo de muebles</h3>
                     <form action="#" method="get">
@@ -80,45 +81,80 @@
                         <input type="checkbox" name="muebles" id="muebles">
                     </form>
                 </section>
-            <!--Botón para aplicar o limpiar filtros-->
+                <!--Botón para aplicar o limpiar filtros-->
                 <div>
-                    <button type="submit">Aplicar Filtros</button>
-                    <button type="reset">Limpiar Filtros</button>
+                        <button type="submit">Aplicar Filtros</button>
+                        <button type="reset">Limpiar Filtros</button>
                 </div>
-        </aside>
-        <!--Articulos-->
-        <section>
-            <article class="espejo-rectangular">
-                <img src="../assets/img/espejo rectangular.jpg" alt="Espejo rectengular">
-                <h2>Espejo rectangular</h2>
-                <p class="precio-oferta">$119.500</p>
-                <button>Agregar al carrito</button>
-            </article>
-            <article class="escritorio">
-                <img src="../assets/img/Escritorio nordico.jpg" alt="Escritorio nordico">
-                <h2>Escritorio nordico</h2>
-                <p class="precio-oferta">$134.500</p>
-                <button>Agregar al carrito</button>
-            </article>
-            <article class="banco">
-                <img src="../assets/img/Banco o pie de cama.jpg" alt="Banco o pie de cama">
-                <h2>Banco o pie de cama</h2>
-                <p class="precio-oferta">$57.000</p>
-                <button>Agregar al carrito</button>
-            </article>
-            <article class="perchero">
-                <img src="../assets/img/Perchero.jpg" alt="Perchero con estante">
-                <h2>Perchero con estante</h2>
-                <p class="precio-oferta">$23.000</p>
-                <button>Agregar al carrito</button>
-            </article>
-            <article class="mesa-camping">
-                <img src="../assets/img/Mesa de camping.jpg" alt="Mesa de camping">
-                <h2>Mesa de camping</h2>
-                <p class="precio-oferta">$57.000</p>
-                <button>Agregar al carrito</button>
-            </article>
-        </section>
+            </aside>
+            <!--Articulos-->
+            <section>
+                <div class="container my-5">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <article class="articulo">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="../assets/img/Espejo 1.jpg" class="card-img-top" alt="Espejo rectangular">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Espejo rectangular</h2>
+                                        <p class="card-text precio-oferta">$119.500</p>
+                                        <a href="#" class="btn boton-producto">Agregar al carrito</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article class="articulo">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="../assets/img/Escritorio nordico 1.jpg" class="card-img-top" alt="Escritorio nordico">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Escritorio nordico</h2>
+                                        <p class="card-text precio-oferta">$134.500</p>
+                                        <a href="#" class="btn boton-producto">Agregar al carrito</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article class="articulo">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="../assets/img/Banco o pie de cama 1.jpg" class="card-img-top" alt="Banco o pie de cama">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Banco o pie de cama</h2>
+                                        <p class="card-text precio-oferta">$57.000</p>
+                                        <a href="#" class="btn boton-producto">Agregar al carrito</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article class="articulo">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="../assets/img/perchero con estante 1.jpg" class="card-img-top" alt="Perchero con estante">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Perchero con estante</h2>
+                                        <p class="card-text precio-oferta">$23.000</p>
+                                        <a href="#" class="btn boton-producto">Agregar al carrito</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article class="articulo">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="../assets/img/mesa de camping 1.jpg" class="card-img-top" alt="Mesa de camping">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Mesa de camping</h2>
+                                        <p class="card-text precio-oferta">$57.000</p>
+                                        <a href="#" class="btn boton-producto">Agregar al carrito</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <!--Contactános-->
