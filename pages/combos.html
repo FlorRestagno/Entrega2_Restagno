@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!--CSS-->
-    <link rel="stylesheet" href="../assets/CSS/styile.css">
+    <link rel="stylesheet" href="../assets/CSS/style.css">
 </head>
 <body>
     <header>
@@ -46,11 +46,12 @@
     <main>
         <h1>Combos</h1>
         <!--Filtros-->
-        <aside class="filtros">
-            <h2>Filtrar por:</h2>
-            <!--Filtro de categorias-->
-                <section class="filtro-categorias">
-                    <h3>Categorías</h3>
+        <div class="combos">
+            <aside class="filtros">
+                <h2>Filtrar por:</h2>
+                <!--Filtro de categorias-->
+                    <section class="filtro-categorias">
+                        <h3>Categorías</h3>
                         <form action="#" method="get">
                             <label for="categoria">Living</label>
                             <input type="checkbox" name="categoria" id="categoria">
@@ -65,41 +66,14 @@
                             <label for="categoria">Exterior</label>
                             <input type="checkbox" name="categoria" id="categoria">
                         </form>
-                </section>
-            <!--Botón para aplicar o limpiar filtros-->
-                <div>
-                    <button type="submit">Aplicar Filtros</button>
-                    <button type="reset">Limpiar Filtros</button>
-                </div>
-        </aside>
-        <!--Combos-->
-        <section>
-            <article class="combo-gervasoni">
-                <img src="../assets/img/Combo gervasoni.jpg" alt="Combo de sillones y mesa estilo nordico">
-                <h2>Combo Gevasoni</h2>
-                <p class="precio-oferta">$125.500</p>
-                <button>Agregar al carrito</button>
-            </article>
-            <article class="combo-mesas-de-luz">
-                <img src="../assets/img/Combo mesas de luz.jpg" alt="Combo 2 mesas de luz estilo nordico">
-                <h2>Combo Mesas de Luz</h2>
-                <p class="precio-oferta">$105.500</p>
-                <button>Agregar al carrito</button>
-            </article>
-            <article class="combo-mesas-ratonas">
-                <img src="../assets/img/Combo mesas ratonas.jpg" alt="Combo de living mesas ratonas estilo nordico">
-                <h2>Combo Mesas Ratonas</h2>
-                <p class="precio-oferta">$98.700</p>
-                <button>Agregar al carrito</button>
-            </article>
-            <article class="combo-faroles">
-                <img src="../assets/img/Combo faroles.jpg" alt="Combo 3 faroles de pino">
-                <h2>Combo Faroles</h2>
-                <p class="precio-oferta">$47.300</p>
-                <button>Agregar al carrito</button>
-            </article>
-        </section>
-        <!--Combos-->
+                    </section>
+                <!--Botón para aplicar o limpiar filtros-->
+                    <div>
+                        <button type="submit">Aplicar Filtros</button>
+                        <button type="reset">Limpiar Filtros</button>
+                    </div>
+            </aside>
+            <!--Combos-->
             <section>
                 <div class="container my-5">
                     <div class="row g-4">
@@ -118,10 +92,10 @@
                         <div class="col-md-4">
                             <article class="articulo">
                                 <div class="card" style="width: 18rem;">
-                                    <img src="../assets/img/Escritorio nordico 1.jpg" class="card-img-top" alt="Escritorio nordico">
+                                    <img src="../assets/img/mesa de luz 1.jpg" class="card-img-top" alt="Combo 2 mesas de luz estilo nordico">
                                     <div class="card-body">
-                                        <h2 class="card-title">Escritorio nordico</h2>
-                                        <p class="card-text precio-oferta">$134.500</p>
+                                        <h2 class="card-title">Combo Mesas de Luz</h2>
+                                        <p class="card-text precio-oferta">$104.500</p>
                                         <a href="#" class="btn boton-producto">Agregar al carrito</a>
                                     </div>
                                 </div>
@@ -130,10 +104,10 @@
                         <div class="col-md-4">
                             <article class="articulo">
                                 <div class="card" style="width: 18rem;">
-                                    <img src="../assets/img/Banco o pie de cama 1.jpg" class="card-img-top" alt="Banco o pie de cama">
+                                    <img src="../assets/img/Mesas ratonas 1.jpg" class="card-img-top" alt="Combo de living mesas ratonas estilo nordico">
                                     <div class="card-body">
-                                        <h2 class="card-title">Banco o pie de cama</h2>
-                                        <p class="card-text precio-oferta">$57.000</p>
+                                        <h2 class="card-title">Combo Mesas Ratonas</h2>
+                                        <p class="card-text precio-oferta">$98.700</p>
                                         <a href="#" class="btn boton-producto">Agregar al carrito</a>
                                     </div>
                                 </div>
@@ -142,22 +116,10 @@
                         <div class="col-md-4">
                             <article class="articulo">
                                 <div class="card" style="width: 18rem;">
-                                    <img src="../assets/img/perchero con estante 1.jpg" class="card-img-top" alt="Perchero con estante">
+                                    <img src="../assets/img/faroles 1.jpg" class="card-img-top" alt="Combo 3 faroles de pino">
                                     <div class="card-body">
-                                        <h2 class="card-title">Perchero con estante</h2>
-                                        <p class="card-text precio-oferta">$23.000</p>
-                                        <a href="#" class="btn boton-producto">Agregar al carrito</a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col-md-4">
-                            <article class="articulo">
-                                <div class="card" style="width: 18rem;">
-                                    <img src="../assets/img/mesa de camping 1.jpg" class="card-img-top" alt="Mesa de camping">
-                                    <div class="card-body">
-                                        <h2 class="card-title">Mesa de camping</h2>
-                                        <p class="card-text precio-oferta">$57.000</p>
+                                        <h2 class="card-title">Combo Faroles</h2>
+                                        <p class="card-text precio-oferta">$47.300</p>
                                         <a href="#" class="btn boton-producto">Agregar al carrito</a>
                                     </div>
                                 </div>
@@ -166,6 +128,7 @@
                     </div>
                 </div>
             </section>
+        </div>
     </main>
     <footer>
         <!--Contactános-->
