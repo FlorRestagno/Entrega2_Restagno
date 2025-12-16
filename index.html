@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!--CSS-->
-    <link rel="stylesheet" href="./assets/CSS/styile.css">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
                 <img src="./assets/img/Cora + Logo (Marrón Oscuro) SIN FONDO.png" alt="Logo Lemu Deco-Muebles">
             </a>
         </div>
-        <!--barra de busqueda-->
+        <!-- barra de busqueda -->
         <form class="buscar" action="/buscar" method="get">
             <label for="buscar"></label>
             <input type="search" name="buscar" id="buscar" placeholder="Buscar">
@@ -30,7 +30,7 @@
                 <i class="fa-solid fa-magnifying-glass lupa"></i>
             </button>
         </form>
-        <!--Navegacion principal-->
+        <!--Navegacion principal
         <nav class="navegacion-principal" aria-label="Navegacion principal">
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
@@ -40,11 +40,37 @@
                 <li><a href="./pages/mas-informacion.html">Mas información</a></li>
             </ul>
         </nav>
-        <i class="fa-solid fa-bars hamburguesa"></i>
-        <!--Botones carrito y perfil-->
+        <i class="fa-solid fa-bars hamburguesa"></i>-->
+        <!-- Botones carrito y perfil -->
         <nav class="botones">
             <i class="fa-solid fa-cart-shopping carrito"></i>
             <i class="fa-solid fa-user perfil"></i>
+        </nav>
+        <nav class="navbar navbar-expand-lg navegacion-principal">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/combos.html">Combos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/muebles-a-medida.html">Muebles a medida</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/mas-informacion.html">Mas información</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>   
     <main>

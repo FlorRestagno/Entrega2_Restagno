@@ -1,4 +1,30 @@
 header {
+    .logo {
+    grid-area: logo;
+    padding: 15px;
+    }
+    .navegacion-principal{
+    grid-area: navegacion;
+    .container-fluid{
+        .navbar-toggler{
+            border: none;
+            box-shadow: none;
+        }
+        .collapse{
+            justify-content: center;
+            .navbar-nav {
+                justify-content: center;
+                width: 100%;
+                .nav-item{
+                    .nav-link{
+                        color: #623b21;
+                        font-family: "Roboto", sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+    }
     background-color: #e3ebc6;
     display: grid;
     grid-template-areas: 
@@ -7,25 +33,11 @@ header {
     align-items: center;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px 40px;
-    form{
-    display: flex;
-    }
     nav {
         ul{
-            list-style: none;
-            display: flex;
             column-gap: 70px;
-            justify-content: center;
             border-top: 2.5px solid lightgrey;
-            padding: 20px 0px 10px;
-            li {
-                a{
-                    font-family: "Roboto", sans-serif;
-                    font-size: 20px;
-                    color: #623b21;
-                    text-decoration: none;
-                }
-            }
+            padding: 20px 0px 10px; 
         }
     }
     div {
@@ -37,19 +49,3 @@ header {
         }
     }
     }
-
-
-.logo {
-    grid-area: logo;
-    padding: 15px;
-}
-.navegacion-principal{
-    grid-area: navegacion;
-}
-
-header 
-.hamburguesa {
-    color: #623b21;
-    font-size: 20px;
-    display: none;
-}
