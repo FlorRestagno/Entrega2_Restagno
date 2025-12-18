@@ -1,8 +1,29 @@
-/* @media(max-width:991px) {
-    .hamburguesa{
-        display: block;
+@media (max-width:768px) {
+    header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .navegacion-principal {
+            display: flex;
+            .container-fluid {
+                .hamburguesa {
+                    display: block;
+                }
+                .menu {
+                    display: none;
+                }
+            }
+        }
+        .buscar {
+            display: flex;
+        }
+        .logo {
+            a{
+                img{
+                    width: 70px;
+                    height: auto;
+                }
+            }
+        }
     }
-    .navegacion-principal{
-        display: none;
-    }
-} */
+}

@@ -1,4 +1,13 @@
 header {
+    .botones {
+    grid-area: botones;
+    color: #623b21;
+    font-size: 25px;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    padding: 15px;
+    }
     .logo {
     grid-area: logo;
     padding: 15px;
