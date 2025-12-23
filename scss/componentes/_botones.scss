@@ -1,6 +1,9 @@
 .boton-producto{
     background-color: #623b21;
     color: white;
+    &:hover {
+        background-color: #623b21c0;
+    }
 }
 .lupa {
     color: #623b21;

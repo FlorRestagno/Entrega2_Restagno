@@ -12,7 +12,10 @@ section{
         div{
             border: 3px solid whitesmoke;
             position: relative;
-            &:hover::after{
+            overflow: hidden;
+            &:hover {
+                cursor: pointer;
+                &::after{
                 content: "";
                 width: 100%;
                 height: 100%;
@@ -21,9 +24,14 @@ section{
                 position: absolute;
                 background-color: rgba(80, 44, 14, 0.671);
             }
+            img {
+                transform: scale(1.2);
+            }
+            }
             &:hover { 
                 p{
                     opacity: 1;
+                    transform: translateX(0);
                 }
             }
             p {
@@ -35,10 +43,14 @@ section{
                 left: calc(50% - 64px);
                 z-index: 3;
                 opacity: 0;
+                transition: transform 1s;
+                transform: translateX(-250px);
             }
             img{
                 width: 300px;
                 height: auto;
+                object-fit: cover;
+                transition: transform .5s;
             }
         }
     }
