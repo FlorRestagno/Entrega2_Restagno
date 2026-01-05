@@ -69,8 +69,7 @@ main .combos .filtros section form {
 }
 
 main div img {
-  width: 1490px;
-  height: auto;
+  width: 100%;
 }
 main article h2 {
   font-family: "Roboto", sans-serif;
@@ -146,6 +145,10 @@ section .proyectos div img {
   transition: transform 0.5s;
 }
 
+main .ideas {
+  display: flex;
+  justify-content: center;
+}
 main .formulario-ideas {
   display: flex;
   justify-content: center;
