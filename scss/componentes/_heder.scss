@@ -1,7 +1,9 @@
+@use "sass:map";
+@use "../utilities/maps" as mapa;
 header {
     .botones {
     grid-area: botones;
-    color: #623b21;
+    color: map.get(mapa.$colores,color-primario);
     font-size: 25px;
     display: flex;
     justify-content: end;
@@ -26,7 +28,7 @@ header {
                 width: 100%;
                 .nav-item{
                     .nav-link{
-                        color: #623b21;
+                        color: map.get(mapa.$colores,color-primario);;
                         font-family: "Roboto", sans-serif;
                         }
                     }
@@ -34,7 +36,7 @@ header {
             }
         }
     }
-    background-color: #e3ebc6;
+    background-color: map.get(mapa.$colores,color-secundario);
     display: grid;
     grid-template-areas: 
     "logo busqueda busqueda botones"

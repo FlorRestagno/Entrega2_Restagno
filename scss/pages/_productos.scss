@@ -1,3 +1,5 @@
+@use "sass:map";
+@use "../utilities/maps" as mapa;
 main {
     .productos {
         display: grid;
@@ -5,11 +7,11 @@ main {
         gap: 2rem;
         padding: 10px;
         .filtros {
-            background-color: rgb(214, 214, 214);
+            background-color: map.get(mapa.$colores,color-filtros);
             h2 {
             font-family:"Roboto", sans-serif;
             font-size: 25px;
-            color: #623b21;
+            color: map.get(mapa.$colores,color-primario);
             margin: 10px;
             }
             section {

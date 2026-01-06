@@ -1,11 +1,13 @@
+@use "sass:map";
+@use "../utilities/maps" as mapa;
 .boton-producto{
-    background-color: #623b21;
+    background-color: map.get(mapa.$colores,color-primario);
     color: white;
     &:hover {
         background-color: #623b21c0;
     }
 }
 .lupa {
-    color: #623b21;
+    color: map.get(mapa.$colores,color-primario);
     font-size: 20px;
 }

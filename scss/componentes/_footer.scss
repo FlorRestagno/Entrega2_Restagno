@@ -1,5 +1,7 @@
+@use "sass:map";
+@use "../utilities/maps" as mapa;
 footer {
-    background-color: #e3ebc6;
+    background-color: map.get(mapa.$colores,color-secundario);
     padding: 40px 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -14,7 +16,7 @@ footer {
             li {
                 font-family: "Roboto", sans-serif;
                 font-size: 15px;
-                color: #623b21;
+                color: map.get(mapa.$colores,color-primario);
                 text-decoration: none;
             }
         }
