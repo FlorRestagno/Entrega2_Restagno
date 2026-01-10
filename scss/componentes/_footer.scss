@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "../utilities/maps" as mapa;
+@use "../utilities/mixin";
 footer {
     background-color: map.get(mapa.$colores,color-secundario);
     padding: 40px 20px;
@@ -7,29 +8,31 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     form {
+        @include mixin.tipografia (("Roboto", sans-serif), 15px, map.get(mapa.$colores,"color-primario"));
         display: flex;
         flex-direction: column;
         gap: 50px;
     }
-    section {
+    .contacto {
         ul {
             li {
-                font-family: "Roboto", sans-serif;
-                font-size: 15px;
-                color: map.get(mapa.$colores,color-primario);
-                text-decoration: none;
+                @include mixin.tipografia (("Roboto", sans-serif), 15px, map.get(mapa.$colores,"color-primario"));
+                a {
+                    text-decoration: none;
+                }
             }
         }
     }
-}
-
-.info {
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-    color: #623b21;
-}
-.suscribirse {
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-    color: #623b21;
+    section {
+        ul.info {
+            @include mixin.tipografia (("Roboto", sans-serif), 15px, map.get(mapa.$colores,"color-primario"));
+            li {
+                @include mixin.tipografia (("Roboto", sans-serif), 15px, map.get(mapa.$colores,"color-primario"));
+                text-decoration: none;
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }

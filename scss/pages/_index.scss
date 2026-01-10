@@ -1,3 +1,7 @@
+@use "sass:map";
+@use "../utilities/maps" as mapa;
+@use "../utilities/exentd";
+@use "../utilities/mixin";
 main {
     div {
         img {
@@ -8,17 +12,13 @@ main {
         h2{
     font-family: "Roboto", sans-serif;
     font-size: 30px;
-    color: #623b21;
+    color: map.get(mapa.$colores,color-primario);
         }
         .precio-anterior {
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    color: grey;
-    text-decoration: line-through;
+    @include mixin.tipografia(("Roboto", sans-serif), 20px, grey, line-through);
 }
         .precio-oferta {
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
+    @include mixin.tipografia(("Roboto", sans-serif), 20px, black);
     color: black;
 }
         }

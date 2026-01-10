@@ -1,19 +1,18 @@
+@use "sass:map";
+@use "../utilities/maps" as mapa;
+@use "../utilities/exentd";
+@use "../utilities/mixin";
 main {
     background: linear-gradient(#f2e7da, #cc9d63);
     h1 {
-    font-family: "Roboto", sans-serif;
-    font-size: 50px;
-    color: #623b21;
-    display: flex;
-    justify-content: center;
+    @include mixin.tipografia (("Roboto", sans-serif), 50px, map.get(mapa.$colores,"color-primario"));
+    @extend %flex-center;
 }
 }
 footer {
     section {
         h3 {
-            font-family: "Roboto", sans-serif;
-            font-size: 20px;
-            color: #623b21;
+            @include mixin.tipografia (("Roboto", sans-serif), 20px, map.get(mapa.$colores,"color-primario"));
             margin: 10px;
         }
     }

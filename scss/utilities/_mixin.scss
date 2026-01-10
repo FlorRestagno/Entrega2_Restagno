@@ -1,0 +1,6 @@
+@mixin tipografia ($family, $size, $color, $decoration: none) {
+    font-family: $family;
+    font-size: $size;
+    color: $color;
+    text-decoration: $decoration;
+}

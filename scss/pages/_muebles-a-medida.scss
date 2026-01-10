@@ -1,3 +1,4 @@
+@use "../utilities/exentd";
 section{
     .proyectos {
     padding: 25px 0px 40px;
@@ -57,12 +58,10 @@ section{
 }
 main {
     .ideas {
-        display: flex;
-        justify-content: center;
+        @extend %flex-center;
     }
     .formulario-ideas {
-        display: flex;
-        justify-content: center;
+        @extend %flex-center;
         padding: 20px 30px;
         margin: 20px;
         .ideas-proyecto{

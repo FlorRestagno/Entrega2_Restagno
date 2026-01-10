@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "../utilities/maps" as mapa;
+@use "../utilities/mixin";
 main {
     .productos {
         display: grid;
@@ -9,16 +10,12 @@ main {
         .filtros {
             background-color: map.get(mapa.$colores,color-filtros);
             h2 {
-            font-family:"Roboto", sans-serif;
-            font-size: 25px;
-            color: map.get(mapa.$colores,color-primario);
+            @include mixin.tipografia (("Roboto", sans-serif), 25px, map.get(mapa.$colores,"color-primario"));
             margin: 10px;
             }
             section {
                     h3 {
-                        font-family:"Roboto", sans-serif;
-                        color: black;
-                        font-size: 20px;
+                        @include mixin.tipografia (("Roboto", sans-serif), 20px, black);
                         margin: 10px;
                         padding: 5px;
                     }

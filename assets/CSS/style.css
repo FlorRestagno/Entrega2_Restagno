@@ -1,3 +1,9 @@
+main .ideas, main .formulario-ideas, main h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 main {
   background: linear-gradient(#f2e7da, #cc9d63);
 }
@@ -5,14 +11,14 @@ main h1 {
   font-family: "Roboto", sans-serif;
   font-size: 50px;
   color: #623b21;
-  display: flex;
-  justify-content: center;
+  text-decoration: none;
 }
 
 footer section h3 {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   color: #623b21;
+  text-decoration: none;
   margin: 10px;
 }
 
@@ -52,12 +58,14 @@ main .combos .filtros h2 {
   font-family: "Roboto", sans-serif;
   font-size: 25px;
   color: #623b21;
+  text-decoration: none;
   margin: 10px;
 }
 main .combos .filtros section h3 {
   font-family: "Roboto", sans-serif;
-  color: black;
   font-size: 20px;
+  color: black;
+  text-decoration: none;
   margin: 10px;
   padding: 5px;
 }
@@ -85,6 +93,8 @@ main article .precio-anterior {
 main article .precio-oferta {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
+  color: black;
+  text-decoration: none;
   color: black;
 }
 main .articulo {
@@ -145,13 +155,7 @@ section .proyectos div img {
   transition: transform 0.5s;
 }
 
-main .ideas {
-  display: flex;
-  justify-content: center;
-}
 main .formulario-ideas {
-  display: flex;
-  justify-content: center;
   padding: 20px 30px;
   margin: 20px;
 }
@@ -215,12 +219,14 @@ main .productos .filtros h2 {
   font-family: "Roboto", sans-serif;
   font-size: 25px;
   color: #623b21;
+  text-decoration: none;
   margin: 10px;
 }
 main .productos .filtros section h3 {
   font-family: "Roboto", sans-serif;
-  color: black;
   font-size: 20px;
+  color: black;
+  text-decoration: none;
   margin: 10px;
   padding: 5px;
 }
@@ -259,8 +265,10 @@ header .navegacion-principal .container-fluid .collapse .navbar-nav {
   width: 100%;
 }
 header .navegacion-principal .container-fluid .collapse .navbar-nav .nav-item .nav-link {
-  color: #623b21;
   font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #623b21;
+  text-decoration: none;
 }
 header {
   background-color: #e3ebc6;
@@ -288,27 +296,38 @@ footer {
   gap: 40px;
 }
 footer form {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #623b21;
+  text-decoration: none;
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
-footer section ul li {
+footer .contacto ul li {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   color: #623b21;
   text-decoration: none;
 }
-
-.info {
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  color: #623b21;
+footer .contacto ul li a {
+  text-decoration: none;
 }
-
-.suscribirse {
+footer section ul.info {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   color: #623b21;
+  text-decoration: none;
+}
+footer section ul.info li {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #623b21;
+  text-decoration: none;
+  text-decoration: none;
+}
+footer section ul.info li a {
+  text-decoration: none;
 }
 
 .boton-producto {

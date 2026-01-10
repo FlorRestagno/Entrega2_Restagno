@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "../utilities/maps" as mapa;
+@use "../utilities/mixin";
 header {
     .botones {
     grid-area: botones;
@@ -28,8 +29,7 @@ header {
                 width: 100%;
                 .nav-item{
                     .nav-link{
-                        color: map.get(mapa.$colores,color-primario);;
-                        font-family: "Roboto", sans-serif;
+                        @include mixin.tipografia (("Roboto", sans-serif), 20px, map.get(mapa.$colores,"color-primario"));
                         }
                     }
                 }
